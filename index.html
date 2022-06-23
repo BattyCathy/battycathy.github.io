@@ -29,7 +29,12 @@ function pause() {
 myMusic.pause();
 }
 </script>
-
+<script src="https://unpkg.com/hydra-synth"></script>
+<script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({ detectAudio: false })
+      osc(4, 0.1, 1.2).out()
+</script>
 
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/A._gigantea_Aldabra_Giant_Tortoise.jpg">
 </body>
